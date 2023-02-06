@@ -1,0 +1,179 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #307AA4;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.header {
+    height: 70px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav {
+    margin: 0 30px;
+}
+
+.header-element-left {
+    margin: 0 60px;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-family: 'Great Vibes', cursive;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+.header-element {
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+}
+
+
+.menu-button-container {
+    display: none;
+}
+
+.menu-button-container img {
+    background-color:var(--main-bg-color);
+    margin: 20px 20px;
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+} 
+
+.welcome {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.blog-container {
+    display: flex;
+}
+
+.blog-item {
+    margin: 30px 40px;
+    text-align: left;
+}
+
+.blog-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+} 
+
+.blog-title {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog-subtitle {
+    margin: 10px 0px;
+}
+
+.footer-class {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-item-left {
+    padding: 10px 50px;
+    width: 70%;
+}
+
+.footer-text{
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 10px 0;
+}
+
+.footer-class .fb-icon img{
+    margin: 0px 10px;
+    background-color: white;
+    width: 20px;
+    height: auto;
+}
+
+.footer-item-right {
+    padding: 30px 50px;
+    width: 40%;
+}
+
+.footer-button-holder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.magic-button {
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (max-width: 740px) {
+    .blog-container{
+        display: block;
+    }
+    
+    .blog-item {
+        padding-top:15px;
+        padding-bottom: 15px;
+    }
+
+    #header-element-left {
+        margin-left: calc();
+    }
+
+    .header{
+        text-align: center;
+    }
+
+    #nav {
+        display: none;
+    }
+    
+    .menu-button {
+        display: inline-block;
+    }
+}
